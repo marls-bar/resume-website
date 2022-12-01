@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {Link} from 'react-router-dom';
-import { Button } from '../../src/components/Button';
+import { Button } from './Button';
 import './Navbar.css';
 
 function Navbar() {
@@ -25,7 +25,8 @@ function Navbar() {
       <nav className='navbar'>
         <div className="navbar-container">
             <Link to="/" className="navbar-logo">
-                TRVL <i className="fab fa-brands fa-freebsd"></i>
+                You can do it
+                <i className="fab fa-brands fa-freebsd"></i>
             </Link>
             <div className='menu-icon' onClick={handleCLick}>
                 <i className={click ? 'fas fa-times' : 'fas fa-bars'}/>
